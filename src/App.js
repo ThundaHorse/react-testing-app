@@ -1,24 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Hero from "./components/header/Hero";
+import Footer from "./components/footer/Footer";
+import Form from "./components/form/Form";
 
 function App() {
+  let links = `
+    Placeholder
+    Placeholder
+    Placeholder
+    Placeholder
+    Placeholder
+  `;
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Hero />
+      <hr />
+      <div className="container">
+        <h2>I'm body</h2>
+        <Form />
+      </div>
+      <Footer children={links} />
     </div>
   );
 }
